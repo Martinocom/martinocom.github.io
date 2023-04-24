@@ -1,0 +1,59 @@
+.TopBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.Image {
+  background-color: var(--background);
+  width: 2em;
+  padding: 0.5em;
+  border-radius: 0.3em 1em 0.3em 1em;
+  cursor: pointer;
+}
+
+.LinkContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.LinkContainer a {
+  color: var(--text1);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text2);
+  }
+}
+
+.Wave {
+  top: 3em;
+  min-height: 2em;
+  height: 2em;
+  max-height: 2em;
+  width: 100vw;
+  object-fit: fill;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.Content {
+  background-color: var(--background);
+  border-radius: 3em 3em 0em 0em;
+  height: calc(100% - 3em);
+  max-height: calc(100% - 3em);
+  overflow: hidden;
+}
+
+.Outlet {
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+}

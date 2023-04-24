@@ -1,0 +1,21 @@
+.Container {
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+.Card {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.2em;
+  padding-bottom: 0.5em;
+  background-color: var(--backgroundLayer1);
+  border-radius: 1em 3em 1em 3em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+p {
+  margin: 0;
+}
