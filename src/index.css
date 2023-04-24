@@ -16,6 +16,8 @@
   --textDisabled: #666666;
   --textOnPrimary: #ededed;
 
+  --moneyger: #009272;
+
   background: var(--background);
 }
 
@@ -40,4 +42,14 @@ body, #root {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+ color: var(--primary);
+ cursor: pointer;
+ text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
