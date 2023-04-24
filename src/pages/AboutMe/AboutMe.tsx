@@ -76,10 +76,11 @@ function AboutMe(props: AboutMeProps) {
           </p>
         </Section>
 
-        <Section title="CSen (Poomsae Score)">
+        <Section title="CSEN">
           <p>
-            I was one of the two programmers in charche of developing Backend,
-            Backoffice and an App to manage an entire Taekwondoo torunament.
+            I was one of the two programmers in charge of developing CsenPoomsae Score: 
+            a suite consisting in a Backend, Backoffice and an App,
+            to manage an entire Taekwondoo torunament.
           </p>
         </Section>
 

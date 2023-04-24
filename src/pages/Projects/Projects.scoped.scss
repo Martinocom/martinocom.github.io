@@ -1,0 +1,13 @@
+.Container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5%;
+}
+
+@media screen and (min-width: 900px) {
+  .Container {
+    margin: 3em;
+  }
+}
