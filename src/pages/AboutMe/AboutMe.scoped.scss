@@ -2,6 +2,10 @@
   margin: 5%;
 }
 
+.Experiences {
+  display: block;
+}
+
 p {
   margin: 0;
   margin-bottom: 1em;
@@ -10,4 +14,18 @@ p {
 
 a.Moneyger {
   color: var(--moneyger);
+}
+
+
+@media screen and (min-width: 900px) {
+  .Container {
+    margin: 3em;
+  }
+  
+  .Experiences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    grid-template-rows: masonry;
+    gap: 3em;
+  }
 }

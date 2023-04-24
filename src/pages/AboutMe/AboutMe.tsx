@@ -38,18 +38,7 @@ function AboutMe(props: AboutMeProps) {
       </p>
 
       <h1>My Working Experience</h1>
-      <div>
-        {/*<Paragraph title="Semantic Web & Agents" flag="open-source" url="https://github.com/Martinocom/pervasive-semantic-exam">
-            Agent-Oriented Programming nested with Semantic Web and IoT.
-          </Paragraph>
-
-          <Paragraph title="g-code-z-increaser" flag="open-source" url="https://github.com/Martinocom/g-code-z-increaser">
-            Spin-Off project that post-process a <code>.gcode</code> file to increase the Z height after the first layer.
-          </Paragraph>
-
-          <Paragraph title="This page" flag="open-source" url="https://github.com/Martinocom/martinocom.github.io">
-            100% self-made. No styles, no templates. Pure React.js and experience.
-          </Paragraph> */}
+      <div className="Experiences">
         <Section title="Personal">
           <p>
             Creator of <a className="Moneyger" href="https://play.google.com/store/apps/details?id=com.martinocom.moneyger">Moneyger</a>, a money-oriented application that
