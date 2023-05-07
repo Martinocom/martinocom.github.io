@@ -1,8 +1,9 @@
 import React from 'react';
-import './Home.scoped.scss';
+import { AppBadge } from "../../components/AppBadge/AppBadge";
 import { MeCard } from "../../components/MeCard/MeCard";
-import { Section } from "../../components/Section/Section";
-import { Paragraph } from "../../components/Paragraph/Paragraph";
+import './Home.scoped.scss';
+
+import { BsBookHalf, BsBriefcaseFill, BsCodeSlash, BsFillCalendarCheckFill, BsKanban } from "react-icons/bs";
 
 interface HomeProps {}
 
@@ -10,8 +11,40 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
   return (
     <>
       <MeCard />
+
+      <div className="BadgeContainer">
+        <AppBadge 
+          Icon={<BsFillCalendarCheckFill size={23} color="#009272"/>}
+          title="9+ Years of Experience"
+          text="Programming is flowing inside me"
+        />
+
+        <AppBadge 
+          Icon={<BsBriefcaseFill size={23} color="#f97d42"/>}
+          title="Rich working history"
+          text="Exploring and coding in all shapes"
+        />
+
+        <AppBadge 
+          Icon={<BsKanban size={23} color="#EAC435"/>}
+          title="Project-Oriented"
+          text="Building awarness on 10+ big projects"
+        />
+
+        <AppBadge 
+          Icon={<BsCodeSlash size={23} color="#20A4F3"/>}
+          title="Universal knowledge"
+          text="No scecrets in Frontend and Backend"
+        />
+
+        <AppBadge 
+          Icon={<BsBookHalf size={23} color="#ca1551"/>}
+          title="Always Learning"
+          text="Never stopping improvement"
+        />
+      </div>
       
-      <div className="Info">
+      {/*<div className="Info">
         <Section title="Skills & Experience">
           <Paragraph title="9+ years of programming">
             From Backend to Frontend, from Apps to SQL queries. I touched everything in order to find what I really like.
@@ -62,7 +95,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
             100% self-made. No styles, no templates. Pure React.js and experience.
           </Paragraph>
         </Section>
-      </div>
+  </div>*/}
     </>
   );
 };

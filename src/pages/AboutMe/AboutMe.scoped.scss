@@ -1,5 +1,16 @@
+h1 {
+  margin-bottom: 0.2em;
+}
+
 .Container {
   margin: 5%;
+}
+
+.Badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }
 
 .Experiences {

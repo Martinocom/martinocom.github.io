@@ -6,8 +6,11 @@
   margin-top: 0em;
 }
 
-p {
-  margin: 0;
+.BadgeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em;
 }
 
 ul {
@@ -18,6 +21,14 @@ ul {
 
   li {
     margin-bottom: 0.4em;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .BadgeContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
