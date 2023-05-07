@@ -20,7 +20,7 @@ function AppBadge({Icon, title, text}: AppBadgeProps) {
           {text ? <p>{text}</p> : null }
         </div>
       </div>
-      <h2 className="Subtitle">{title}</h2>
+      {!text ? <h2 className="Subtitle">{title}</h2> : null}
     </div>
   );
 };
