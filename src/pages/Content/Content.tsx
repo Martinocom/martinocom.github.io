@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+
 import { AboutMe } from "../AboutMe/AboutMe";
 import { Home } from "../Home/Home";
 import { Projects } from "../Projects/Projects";
-import './Content.scoped.scss';
+import "./Content.scoped.scss";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ContentProps {}
 
 function Content(props: ContentProps) {
@@ -30,12 +32,21 @@ function Content(props: ContentProps) {
       }}
     >
       <Routes location={displayLocation}>
-        <Route index element={<Home />} />
-        <Route path="aboutme" element={<AboutMe />} />
-        <Route path="projects" element={<Projects />} />
+        <Route
+          index
+          element={<Home />}
+        />
+        <Route
+          path="aboutme"
+          element={<AboutMe />}
+        />
+        <Route
+          path="projects"
+          element={<Projects />}
+        />
       </Routes>
     </div>
   );
-};
+}
 
 export { Content };

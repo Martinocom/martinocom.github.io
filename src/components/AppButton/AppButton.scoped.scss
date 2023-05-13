@@ -1,14 +1,15 @@
 .Container {
   cursor: pointer;
-  background-color: var(--primary);
   border-radius: 1em 3em 1em 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    transform: scale(1.1);
   }
 }

@@ -8,12 +8,10 @@ interface SectionProps {
 
 function Section(props: SectionProps) {
   return (
-    <div className="Container">
+    <section className="Card">
       <h1>{props.title}</h1>
-      <section className="Card">
-        {props.children}
-      </section>
-    </div>
+      {props.children}
+    </section>
   );
 };
 

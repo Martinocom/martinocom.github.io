@@ -52,6 +52,14 @@ a {
   color: var(--primary);
 }
 
+.highlight.clickable {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.highlight.highlight.clickable:hover {
+  color: var(--primaryDark);
+}
+
 a:hover {
   text-decoration: underline;
 }
