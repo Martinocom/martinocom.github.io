@@ -1,9 +1,11 @@
 .Container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 5%;
+  gap: 1.5em;
+  margin: 1em;
 }
 
 @media screen and (min-width: 900px) {

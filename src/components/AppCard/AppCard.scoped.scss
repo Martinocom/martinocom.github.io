@@ -6,12 +6,8 @@
   background-color: var(--backgroundLayer1);
   border-radius: 1em 3em 1em 3em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  min-width: 20em;
   max-width: 25em;
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--backgroundLayer2);
-  }
 }
 
 .Title {
@@ -30,12 +26,17 @@
     border-radius: 0.5em 1em 0.5em 1em;
     width: 3em;
     height: 3em;
-    background-color: var(--backgroundLayer2);
+    background-color: var(--primary);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     overflow: hidden;
 
     img {
       overflow: hidden;
+    }
+
+    .Icon {
+      font-size: 1.5em;
+      margin-top: 0.1em;
     }
   }
 
@@ -59,4 +60,13 @@ h2 {
 
 .Description {
   height: 7em;
+}
+
+.Badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
 }

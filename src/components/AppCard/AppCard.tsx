@@ -1,20 +1,36 @@
 import React from 'react';
 import './AppCard.scoped.scss';
+import { AppIconButton } from "../AppIconButton/AppIconButton";
 
-interface AppCardProps {
+import { IoLogoGooglePlaystore, IoLogoAppleAppstore, IoGlobeOutline, IoLogoGithub } from "react-icons/io5";
+
+type AppCardProps = {
   imgSrc: string;
   title: string;
   subtitle: string;
-  url: string;
   description: string;
+  site?: string;
+  repo?: string;
+  androidStore?: string;
+  appleStore?: string;
+} | {
+  Icon: JSX.Element;
+  title: string;
+  subtitle: string;
+  description: string;
+  site?: string;
+  repo?: string;
+  androidStore?: string;
+  appleStore?: string;
 }
 
 function AppCard(props: AppCardProps) {
   return (
-    <div className="Container" onClick={() => window.open(props.url)}>
+    <div className="Container">
       <div className="Title">
         <div className="Image">
-          <img src={require("../../assets/images/" + props.imgSrc)} alt="App Logo" />
+          {'imgSrc' in props ? <img src={require("../../assets/images/" + props.imgSrc)} alt="App Logo" /> : null}
+          <span className="Icon">{'Icon' in props ? props.Icon : null}</span>
         </div>
         <div>
           <h1>{props.title}</h1>
@@ -24,6 +40,40 @@ function AppCard(props: AppCardProps) {
 
       <div className="Description">
         {props.description}
+      </div>
+
+      <div className="Badges">
+        {props.site ? 
+          <AppIconButton 
+            Icon={<IoGlobeOutline />} 
+            onPress={() => window.open(props.site)}
+            color="#20A4F3"
+          /> 
+        : null}
+
+        {props.repo ? 
+          <AppIconButton 
+            Icon={<IoLogoGithub />} 
+            onPress={() => window.open(props.repo)}
+            color="#6E7DAB"
+          /> 
+        : null}
+
+        {props.androidStore ? 
+          <AppIconButton 
+            Icon={<IoLogoGooglePlaystore />} 
+            onPress={() => window.open(props.androidStore)} 
+            color="#23CE6B"
+          /> 
+        : null}
+
+        {props.appleStore ? 
+          <AppIconButton 
+            Icon={<IoLogoAppleAppstore />} 
+            onPress={() => window.open(props.appleStore)} 
+            color="#8B4513"
+          /> 
+        : null}
       </div>
     </div>
   );
