@@ -2,7 +2,7 @@
   "extends": ["react-native-wcandillon", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
-    "max-len": ["error", { "code": 200 }],
+    "max-len": ["warn", { "code": 200 }],
     "prettier/prettier": [
       "warn",
       {

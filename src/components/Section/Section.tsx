@@ -1,9 +1,9 @@
-import React from 'react';
-import './Section.scoped.scss';
+import React from "react";
+import "./Section.scoped.scss";
 
 interface SectionProps {
   title: string;
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 function Section(props: SectionProps) {
@@ -13,6 +13,6 @@ function Section(props: SectionProps) {
       {props.children}
     </section>
   );
-};
+}
 
 export { Section };

@@ -24,7 +24,7 @@ function MeCard(props: MeCardProps) {
         </div>
       </div>
       <h3 className="Paragraph">
-        Versatile Frontend Engineer with focus on <span className="highlight">TypeScript</span> and <span className="highlight">React Native</span>, eager to take on new challenges in programming.
+        Versatile Frontend Engineer with focus on <b className="highlight">TypeScript</b> and <b className="highlight">React Native</b>, eager to take on new challenges in programming.
       </h3>
     </div>
   );

@@ -10,20 +10,13 @@ h1 {
 
 h2 {
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
   font-size: 1.5em;
   text-align: center;
 }
 
 .Container {
   margin: 5%;
-}
-
-.Badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
 }
 
 .Experiences {
@@ -36,6 +29,7 @@ p {
   margin: 0;
   margin-bottom: 1em;
   text-align: justify;
+  color: var(--text2);
 }
 
 a.Moneyger {
@@ -77,11 +71,16 @@ a.Moneyger {
   padding-top: 2em;
   padding-bottom: 1.5em;
   background-color: var(--backgroundLayer1);
-  border-radius: 2em 5em 2em 5em;
+  border-radius: 1em 3em 1em 3em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin-top: 2em;
 }
 
 .moneyger {
   color: var(--moneyger);
+}
+
+.Small {
+  font-size: 0.9em;
+  color: var(--text3);
 }

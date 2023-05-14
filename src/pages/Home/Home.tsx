@@ -44,7 +44,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
             />
           }
           title="Project-Oriented"
-          text="Building awarness on 10+ big projects"
+          text="Show me the code, not the theory"
         />
 
         <AppBadge
@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
             />
           }
           title="Always Learning"
-          text="Never stopping improvement"
+          text="Never stopping self-improvement"
         />
       </div>
     </>
