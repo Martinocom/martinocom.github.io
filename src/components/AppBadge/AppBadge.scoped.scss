@@ -56,11 +56,11 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 
   h1 {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1em;
     margin: 0;
   }
@@ -71,7 +71,8 @@ h2 {
 
   .Icon {
     flex: 0;
-    margin-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0.3em;
   }
 }
 

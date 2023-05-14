@@ -4,25 +4,27 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   margin-top: 0;
 }
 
 .Animated {
   text-align: center;
-  min-width: 20em;
+  min-width: 22em;
+  width: 22em;
 }
 
 b {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 0;
+  margin-bottom: 0.1em;
   color: var(--text2);
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
 }
 
