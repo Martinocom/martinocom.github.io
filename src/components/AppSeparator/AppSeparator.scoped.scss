@@ -1,0 +1,21 @@
+.Separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; // Space between the dot and lines
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  .Line {
+    min-width: 5em;
+    height: 0.075em; // Thickness of the line
+    background-color: var(--text3);
+  }
+
+  .Dot {
+    width: 0.5em; // Size of the dot
+    height: 0.5em; // Make it a circle
+    background-color: var(--primaryDark);
+    border-radius: 50%;
+  }
+}

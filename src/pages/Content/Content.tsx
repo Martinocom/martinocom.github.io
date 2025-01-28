@@ -36,14 +36,6 @@ function Content(props: ContentProps) {
           index
           element={<Home />}
         />
-        <Route
-          path="aboutme"
-          element={<AboutMe />}
-        />
-        <Route
-          path="projects"
-          element={<Projects />}
-        />
       </Routes>
     </div>
   );
