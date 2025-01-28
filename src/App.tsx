@@ -7,7 +7,6 @@ import NavMenu from "./pages/NavMenu/NavMenu";
 function App() {
   return (
     <BrowserRouter>
-      <NavMenu />
       <Content />
     </BrowserRouter>
   );

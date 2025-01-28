@@ -75,7 +75,7 @@ function AppCard(props: AppCardProps) {
           <AppIconButton
             Icon={<IoLogoAppleAppstore />}
             onPress={() => window.open(props.appleStore)}
-            color="#8B4513"
+            color="#DDD"
           />
         ) : null}
       </div>
